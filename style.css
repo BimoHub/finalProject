@@ -1,6 +1,6 @@
-*,*:before,*:after {
+/* *,*:before,*:after {
 	box-sizing: border-box;
-}
+} */
 body{
     margin: 0;
     padding: 0;
@@ -11,30 +11,35 @@ body{
 .products-bg{
     background-image: url(assets/knight_bg.png);
     /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: top 20vh left 0;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
 }
 .about-bg{
-    background-image: url(assets/knight_bg.png);
-    /* background-position: center; */
-    background-repeat: no-repeat;
+    background-image: url(assets/darkKnight_bg.png);
+    background-position: top 20vh left 0;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 }
 .index-bg{
-    background-image: url(assets/knight_bg.png);
+    background-image: url(assets/king_bg.png);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 .feedback-bg{
-    background-image: url(assets/knight_bg.png);
-    background-position: center;
+    background-image: url(assets/rogue.png);
+    /* background-position: center; */
     background-repeat: no-repeat;
+    background-position: top 17vh left 0;
+    /* background-position: top 17vh left 0; */
     background-size: cover;
+    box-sizing: content-box;
 }
 .support-bg{
-    background-image: url(assets/knight_bg.png);
+    background-image: url(assets/archer_bg.png);
     /* background-position: center; */
+    background-position: top 17vh left 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
