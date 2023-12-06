@@ -200,8 +200,9 @@ a:hover{
     /* background-image: linear-gradient(rgb(52, 195, 64), rgb(62, 153, 195)); */
     /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
     background-image: url(assets/scroll.png);
-    font-weight: 600;
     background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 600;
 }
 
 fieldset {
@@ -433,7 +434,10 @@ ul li .fa
 
 }
 
-
+.about-paragraph{
+    font-size: 1.2rem;
+    color: #e4e4e4;
+}
 
 
 
