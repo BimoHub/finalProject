@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Company Name</title>
+  </head>
+  <body class="products-bg">
+    <nav id="desktop-nav">
+      <div class="logo">Valiant Arms</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Why Us?</a></li>
+          <!-- <li><a href="products.html">Products</a></li> -->
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+
+          <!-- This is the dropdown list, it also contains the links to the three sections of the page. -->
+          <!-- <li><a href="">Dropdown List</a>
+                <ul>
+                  <li><a href="#section1">Section 1</a></li>
+                  <li><a href="#section2">Section 2</a></li>
+                  <li><a href="#section3">Section 3</a></li>
+                </ul>
+            </li> -->
+          <!-- <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Valiant Arms</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- <li><a href="products.html" onclick="toggleMenu()">Products</a></li> -->
+          <li><a href="index.html" onclick="toggleMenu()">Why Us?</a></li>
+          <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+          <li><a href="support.html" onclick="toggleMenu()">Support</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About Us</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="products-sidebar">
+      <ul>
+        <li>
+          <i class="fa fa-home" arial-hidden="true"></i>
+          <div class="icons"></div>
+        </li>
+
+        <li>
+          <i class="fa fa-user" arial-hidden="true"></i>
+          <div class="icons"></div>
+        </li>
+
+        <li>
+          <i class="fa fa-phone" arial-hidden="true"></i>
+          <div class="icons"></div>
+        </li>
+
+        <li>
+          <i class="fa fa-envelope" arial-hidden="true"></i>
+          <div class="icons"></div>
+        </li>
+
+        <li>
+          <i class="fa fa-cog" arial-hidden="true"></i>
+          <div class="icons"></div>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="products-container">
+        <!-- <div c"></div> -->
+        <!-- <div> -->
+        <section class="swords">
+
+          <div class="weapons item1">
+            <div class="product-image-container">
+              <img
+              src="assets/weapons/sword1.jpg"
+              alt=""
+              class="product-image"
+              />
+            </div>
+            
+            weapon1
+          </div>
+          <div class="weapons item2">
+            <div class="product-image-container">
+              <img
+              src="assets/weapons/sword2.jpg"
+              alt=""
+              class="product-image"
+              />
+            </div>
+            weapon2
+          </div>
+          <div class="weapons item3">
+          <div class="product-image-container">
+            <img
+            src="assets/weapons/katana.jpg"
+            alt=""
+            class="product-image"
+            />
+          </div>
+          weapon3
+        </div>
+      </section>
+
+      <section class="axes">
+
+        <div class="weapons item4">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/axe1.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          weapon4
+        </div>
+        <div class="weapons item5">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/axe2.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          weapon5
+        </div>
+        <div class="weapons item6">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/axe3.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          weapon6
+        </div>
+      </section>
+      <section class="hammers">
+        <div class="weapons item8">
+          <div class="product-image-container">
+            <img
+            src="assets/weapons/hammer2.jpg"
+            alt=""
+            class="product-image"
+            />
+          </div>
+          weapon8
+        </div>
+        <div class="weapons item7">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/hammer1.jpg"
+              alt=""
+              class="product-image"
+              />
+            </div>
+          weapon7
+        </div>
+        <div class="weapons item9">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/hammer3.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          weapon9
+        </div>
+      </section>
+        <section class="daggers">
+        <div class="weapons item7">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/dagger1.jpg"
+              alt=""
+              class="product-image"
+              />
+            </div>
+          weapon7
+        </div>
+        <div class="weapons item9">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/dagger3.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          weapon9
+        </div>
+        <div class="weapons item8">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/dagger2.jpg"
+              alt=""
+              class="product-image"
+              />
+          </div>
+          weapon8
+        </div>
+      </section>
+        <section class="ranged">
+          <div class="weapons item8">
+            <div class="product-image-container">
+              <img
+              src="assets/weapons/bow2.jpg"
+              alt=""
+              class="product-image"
+              />
+            </div>
+            weapon8
+          </div>
+          <div class="weapons item7">
+            <div class="product-image-container">
+              <img
+                src="assets/weapons/bow1.jpg"
+                alt=""
+                class="product-image"
+                />
+              </div>
+            weapon7
+          </div>
+        <div class="weapons item9">
+          <div class="product-image-container">
+            <img
+              src="assets/weapons/bow3.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          weapon9
+        </div>
+      </section>
+        <!-- </div> -->
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

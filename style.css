@@ -1,0 +1,413 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #e29578; */
+}
+
+.products-bg{
+    background-image: url(assets/knight_bg.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-bg{
+    background-image: url(assets/knight_bg.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.index-bg{
+    background-image: url(assets/knight_bg.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.feedback-bg{
+    background-image: url(assets/knight_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.support-bg{
+    background-image: url(assets/knight_bg.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav,.nav-links{
+    display: flex;
+    /* To make the menu appear horizontally */
+}
+
+/* I have styled the navbar in the following code. */
+nav{
+
+    justify-content: space-around;
+    /* To appropriately space the menu items */
+    align-items: center;
+    height: 17vh;
+    /* width: 100vw; */
+    background-color: #83c5be;
+}
+.nav-links{
+    gap: 2rem;
+    /* To remove the bullet points */
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: #006d77;
+    /* to remove the default underline */
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a:hover{
+    color: #edf6f9;
+    text-decoration: underline;
+    /* To give a special underline when the item is hovered upon which is of white color and spaced a little below the text*/
+    text-underline-offset: 1rem;
+    text-decoration-color: #edf6f9;
+}
+.logo{
+    font-size: 2rem;
+}
+.logo:hover{
+    cursor: default;
+}
+
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);    
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:nth-child(2){
+    opacity: 1;
+}
+
+.hamburger-icon span:last-child{
+    transform: none;
+}
+
+/* Below code is to style the feedback form */
+
+.formContainer {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    /* line-height: 50px; */
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+    /* background-image: linear-gradient(rgb(52, 195, 64), rgb(62, 153, 195)); */
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    font-weight: 600;
+}
+
+fieldset {
+    padding: 20px;
+    border: 0px;
+}
+
+legend {
+    font-size: 45px;
+}
+
+label,
+textarea,
+button {
+    margin: 5px;
+    margin-left: 20px;
+}
+
+input,
+select {
+    padding: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    font-weight: 600;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(78, 185, 135);
+    color: rgb(116, 113, 113);
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="radio"] {
+    appearance: none;
+    transition: 0.2s all linear;
+    /* margin-right: 5px; */
+    height: 15px;
+    width: 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+}
+
+input[type="radio"]:checked {
+    background-color: #e4e4e4;
+}
+
+input[type="checkbox"] {
+    transition: 0.2s all linear;
+    appearance: none;
+    height: 15px;
+    width: 10px;
+    position: relative;
+    top: 6px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #e4e4e4;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #4ca1af;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.Languages,
+.Gender {
+    max-height: max-content;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    /* padding: 5px; */
+}
+
+.Languages label,
+.Gender label {
+    margin-left: 0px;
+}
+#pfp {
+    margin-left: 20px;
+}
+button {
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    background-color: #4ca1af;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+
+
+.products-sidebar {
+    float: left;
+    position: relative;
+    top: 0;
+    left: -40px;
+    background: transparent;
+    z-index: 3;
+}
+
+.products-sidebar ul {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+ul li .fa
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  color: #fff;
+}
+
+.products-sidebar ul li {
+  position: relative;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  background: #1b1b1b;
+  text-transform: uppercase;
+  transition: all .4s ease-out;
+}
+
+.products-sidebar ul li > div {
+  display: inline-block;
+  padding: 25px 0;
+  background: transparent;
+}
+
+.products-sidebar ul li:after {
+  position: absolute;
+  background: crimson;
+  color: #fff;
+  top:0;
+  left: 100px;
+  width: 100px; 
+  text-align: center;
+  line-height: 80px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 100%;
+  opacity:.5;
+  transform: perspective(500px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition:all .4s ease-out;
+}
+
+.products-sidebar ul li:nth-child(1):after { 
+  content: "Swords";
+}
+.products-sidebar ul li:nth-child(2):after { 
+  content: "Axes";
+}
+.products-sidebar ul li:nth-child(3):after { 
+  content: "Hammers";
+}
+.products-sidebar ul li:nth-child(4):after { 
+  content: "Daggers";
+}
+.products-sidebar ul li:nth-child(5):after { 
+  content: "Ranged";
+}
+
+.products-sidebar ul li:hover {
+  transform: translateX(-100px);
+}
+
+.products-sidebar ul li:hover:after {
+  opacity: 1;
+  transform: perspective(500px) rotateY(0deg) scale(1) ;
+}
+
+.weapons{
+    text-align: center;
+    margin: 1.2em;
+}
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 85vw; */
+    margin: 0.5em;
+    z-index: 1;
+    /* margin-top: 100px; */
+    /* overflow: hidden; */
+    color: #e4e4e4;
+    font-size: 1.4rem;
+    padding: 1em;
+}
+.product-image{
+    height: auto;
+    width: 15vw;
+    /* height: 20vw; */
+    /* margin: 2em; */
+    flex-basis: 15%;
+}
+.products-container > section {
+    display: flex;
+    align-items: center;
+}
+.product-image-container > img {
+
+}
+
+.promotionPoster{
+    /* transform: translate(-50%); */
+    /* position: absolute; */
+    width: 50vw;
+    margin-top: 7em;
+    margin-left: 30%;
+    margin-bottom: 7em;
+
+}
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Company Name</title>
+</head>
+<body class="support-bg">
+    <nav id="desktop-nav">
+        <div class="logo">Company Name</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Why Us?</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="support.html">Support</a></li> -->
+            <li><a href="about.html">About Us</a></li>
+
+
+            <!-- This is the dropdown list, it also contains the links to the three sections of the page. -->
+            <!-- <li><a href="">Dropdown List</a>
+                <ul>
+                  <li><a href="#section1">Section 1</a></li>
+                  <li><a href="#section2">Section 2</a></li>
+                  <li><a href="#section3">Section 3</a></li>
+                </ul>
+            </li> -->
+            <!-- <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li> -->
+
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav">
+        <div class="logo">Monil Patel</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+      
+            <!-- <li><a href="support.html" onclick="toggleMenu()">Support</a></li> -->
+            <li><a href="index.html" onclick="toggleMenu()">Why Us?</a></li>
+            <li><a href="products.html" onclick="toggleMenu()">Products</a></li>
+            <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About Us</a></li>
+
+          </div>
+        </div>
+      </nav>
+      <script src="script.js"></script>
+</body>
+</html>
