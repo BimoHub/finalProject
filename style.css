@@ -1,6 +1,13 @@
 /* *,*:before,*:after {
 	box-sizing: border-box;
 } */
+}
+
+input 
+    {
+        accent-color: #fcd53f;
+    }
+
 body{
     margin: 0;
     padding: 0;
@@ -60,7 +67,7 @@ nav{
     align-items: center;
     height: 17vh;
     /* width: 100vw; */
-    background-color: #83c5be;
+    background-color: #af7d56;
 }
 .nav-links{
     gap: 2rem;
