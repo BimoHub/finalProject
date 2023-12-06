@@ -185,7 +185,7 @@ a:hover{
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
     /* background-image: linear-gradient(rgb(52, 195, 64), rgb(62, 153, 195)); */
     /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
-    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    background-image: url(assets/scroll.png);
     font-weight: 600;
 }
 
