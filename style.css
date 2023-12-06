@@ -67,7 +67,6 @@ nav{
     align-items: center;
     height: 17vh;
     /* width: 100vw; */
-    background-color: #af7d56;
     background: transparent;
     backdrop-filter: blur(10px);
 }
@@ -189,6 +188,7 @@ a:hover{
     /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
     background-image: url(assets/scroll.png);
     font-weight: 600;
+    background-size: cover;
 }
 
 fieldset {
